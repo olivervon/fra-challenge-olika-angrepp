@@ -41,3 +41,18 @@ Observations:
 - The communication appears to be internal, suggesting attacker activity within the network or a simulated environment
 
 ![endpoints](/screenshots/03_endpoints.png)
+
+## Protocol analysis
+
+Observed protocols:
+- Ethernet
+- IPv4
+- TCP
+- HTTP
+
+Potential attack surfaces:
+- HTTP → possible credential exposure, command execution, and data exfiltration
+- TCP → underlying transport, useful for session tracking and stream analysis
+
+![protocols](/screenshots/04_protocols.png)
+
