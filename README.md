@@ -23,3 +23,19 @@ No filtering applied yet.
 This helps estimate how much data we are dealing with.
 
 ![file stats](/screenshots/02_file_stats.png)
+
+## Network overview
+
+Identified IP addresses:
+
+Internal (likely):
+- 172.22.0.1
+- 172.22.0.2
+
+External (suspicious/unknown):
+- None observed
+
+Observations:
+- Only two hosts are present in the capture, communicating exclusively with each other
+- Both 172.22.0.1 and 172.22.0.2 have similar traffic volume (~2 MB each)
+- The communication appears to be internal, suggesting attacker activity within the network or a simulated environment
