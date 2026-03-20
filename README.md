@@ -11,3 +11,5 @@ Initial impression:
 - Last timestamp: 2022-05-22 13:20:43
 
 No filtering applied yet.
+
+![overview](/screenshots/step1_overview.png)
