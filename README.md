@@ -12,4 +12,4 @@ Initial impression:
 
 No filtering applied yet.
 
-![overview](/screenshots/step1_overview.png)
+![overview](/screenshots/01_overview.png)
