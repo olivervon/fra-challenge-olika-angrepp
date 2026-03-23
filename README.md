@@ -100,6 +100,32 @@ Conclusion:
 
 ![TCP Stream](screenshots/07_tcp_stream.png)
 
+### Vulnerability
+
+The application contains multiple security weaknesses:
+
+- Credentials are transmitted via HTTP GET parameters, exposing sensitive information in cleartext
+- No rate limiting or account lockout mechanism is in place, allowing unlimited login attempts
+- Weak passwords are accepted (e.g., common passwords such as "123456")
+- The application provides identical responses for all login attempts, making it difficult to detect successful authentication
+
+These weaknesses make the application highly susceptible to brute force and credential stuffing attacks.
+
+### Severity
+
+Medium to High
+
+The attack demonstrates that the application is vulnerable to brute force and credential stuffing attacks.
+
+Although successful authentication could not be definitively confirmed, the lack of protective mechanisms and the use of weak credentials significantly increase the risk of account compromise.
+
+Worst-case scenario:
+- Unauthorized access to user accounts
+- Potential administrative access
+- Further exploitation of the system
+
+The absence of rate limiting and secure authentication mechanisms allows attackers to systematically attempt credential combinations without restriction.
+
 ### Attack 2 – Remote Command Execution (Web Shell)
 
 After filtering out login attempts, new HTTP requests were identified targeting a file:
