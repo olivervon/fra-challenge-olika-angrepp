@@ -60,4 +60,4 @@ Potential attack surfaces:
 
 Filtered all HTTP traffic to focus on potential web-based attacks.
 
-![HTTP Traffic](/05_http_filter.png)
+![HTTP Traffic](/screenshots/05_http_filter.png)
