@@ -69,7 +69,7 @@ Filtered all HTTP traffic to focus on potential web-based attacks.
 Multiple HTTP GET requests were observed targeting the login functionality.
 
 Observed patterns:
-- Multiple usernames were tested (e.g., admin, others)
+- Multiple usernames were tested
 - Multiple passwords were attempted for each username
 - Credentials were transmitted in cleartext via HTTP
 
