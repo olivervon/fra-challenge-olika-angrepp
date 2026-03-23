@@ -62,8 +62,6 @@ Filtered all HTTP traffic to focus on potential web-based attacks.
 
 ![HTTP Traffic](/screenshots/05_http_filter.png)
 
-### Attack 1 – Credential Brute Force
-
 ### Attack 1 – Credential Brute Force / Credential Stuffing
 
 Multiple HTTP GET requests were observed targeting the login functionality.
