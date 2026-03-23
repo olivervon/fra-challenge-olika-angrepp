@@ -99,3 +99,26 @@ Conclusion:
 - It is not possible to determine successful login attempts based on response analysis alone
 
 ![TCP Stream](screenshots/07_tcp_stream.png)
+
+### Attack 2 – Remote Command Execution (Web Shell)
+
+After filtering out login attempts, new HTTP requests were identified targeting a file:
+
+/hackable/uploads/funny.php
+
+Observed parameters:
+- cmd=id
+- cmd=ls -la
+- cmd=cat /etc/passwd
+- cmd=cat /etc/shadow
+- cmd=uname -r
+- cmd=arch
+
+Analysis:
+- The attacker is executing system commands via a web-accessible script
+- This indicates the presence of a web shell
+
+Conclusion:
+- The attacker has achieved remote code execution on the target system
+
+![RCE Activity](screenshots/08_attack2_rce.png)
