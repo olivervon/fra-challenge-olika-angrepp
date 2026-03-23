@@ -121,4 +121,4 @@ Analysis:
 Conclusion:
 - The attacker has achieved remote code execution on the target system
 
-![RCE Activity](screenshots/08_attack2_rce.png)
+![RCE Activity](/screenshots/08_attack2_rce.png)
