@@ -61,3 +61,15 @@ Potential attack surfaces:
 Filtered all HTTP traffic to focus on potential web-based attacks.
 
 ![HTTP Traffic](/screenshots/05_http_filter.png)
+
+### Attack 1 – Credential Brute Force
+
+Multiple HTTP GET requests were observed containing credentials in the URL.
+
+Example pattern:
+- username=admin
+- varying password values
+
+This indicates a brute force attack attempting to guess the correct password.
+
+![Brute Force Attempts](/screenshots/06_bruteforce_attempts.png)
