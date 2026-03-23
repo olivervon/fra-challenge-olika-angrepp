@@ -56,3 +56,8 @@ Potential attack surfaces:
 
 ![protocols](/screenshots/04_protocols.png)
 
+### HTTP Traffic Overview
+
+Filtered all HTTP traffic to focus on potential web-based attacks.
+
+![HTTP Traffic](./05_http_filter.png)
