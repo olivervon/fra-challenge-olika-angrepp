@@ -64,12 +64,22 @@ Filtered all HTTP traffic to focus on potential web-based attacks.
 
 ### Attack 1 – Credential Brute Force
 
-Multiple HTTP GET requests were observed containing credentials in the URL.
+### Attack 1 – Credential Brute Force / Credential Stuffing
 
-Example pattern:
-- username=admin
-- varying password values
+Multiple HTTP GET requests were observed targeting the login functionality.
 
-This indicates a brute force attack attempting to guess the correct password.
+Observed patterns:
+- Multiple usernames were tested (e.g., admin, others)
+- Multiple passwords were attempted for each username
+- Credentials were transmitted in cleartext via HTTP
+
+Analysis:
+- The attacker is performing a credential stuffing / brute force attack
+- The attack targets multiple accounts rather than a single user
+- This increases the likelihood of successful compromise
+
+Note:
+- All responses returned HTTP 200 OK, indicating that status codes alone cannot determine authentication success
+- Response content must be analyzed for confirmation
 
 ![Brute Force Attempts](/screenshots/06_bruteforce_attempts.png)
