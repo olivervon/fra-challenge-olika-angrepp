@@ -122,3 +122,21 @@ Conclusion:
 - The attacker has achieved remote code execution on the target system
 
 ![RCE Activity](/screenshots/08_attack2_rce.png)
+
+### Vulnerability
+
+- File upload vulnerability (malicious PHP file)
+- Lack of input validation
+- Remote command execution via unsanitized input
+
+### Severity
+
+Critical
+
+The attacker is able to execute arbitrary system commands and access sensitive system files, including password hashes.
+
+### MITRE ATT&CK
+
+- T1059 – Command and Scripting Interpreter
+- T1105 – Ingress Tool Transfer
+- T1003 – OS Credential Dumping
