@@ -81,3 +81,21 @@ Note:
 - Response content must be analyzed for confirmation
 
 ![Brute Force Attempts](/screenshots/06_bruteforce_attempts.png)
+
+### TCP Stream Analysis
+
+Two representative login attempts were analyzed:
+
+- password=123456
+- password=princesa
+
+Findings:
+- Both responses returned HTTP/1.1 200 OK
+- Content-Length was identical (677 bytes)
+- Response structure and content appeared consistent
+
+Conclusion:
+- The application returns identical responses regardless of authentication success or failure
+- It is not possible to determine successful login attempts based on response analysis alone
+
+![TCP Stream](screenshots/07_tcp_stream.png)
