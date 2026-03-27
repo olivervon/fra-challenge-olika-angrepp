@@ -29,7 +29,7 @@ Two representative login attempts were analyzed:
 - password=123456
 - password=princesa
 
-![TCP Stream](screenshots/07_tcp_stream.png)
+![TCP Stream](/screenshots/07_tcp_stream.png)
 
 Findings:
 - Both responses returned HTTP/1.1 200 OK
