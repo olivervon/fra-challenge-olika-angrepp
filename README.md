@@ -2,11 +2,11 @@
 
 ## Navigation
 
-[00-initial-observation](../00-initial-observation/README.md)  
-[01-attack-1-credential-brute-force](../01-attack-1-credential-brute-force/README.md)  
-[02-attack-2-remote-command-execution](../02-attack-2-remote-command-execution/README.md)  
-[03-attack-3-sql-injection](../03-attack-3-sql-injection/README.md)  
-[04-attack-4-file-upload](../04-attack-4-file-upload/README.md)  
+[00-initial-observation](/00-initial-observation/README.md)  
+[01-attack-1-credential-brute-force](/01-attack-1-credential-brute-force/README.md)  
+[02-attack-2-remote-command-execution](/02-attack-2-remote-command-execution/README.md)  
+[03-attack-3-sql-injection](/03-attack-3-sql-injection/README.md)  
+[04-attack-4-file-upload](/04-attack-4-file-upload/README.md)  
 
 ## Executive Summary
 
