@@ -1,3 +1,6 @@
+<- [Root README](../README.md)   
+[Attack 1](../01-attack-1-credential-brute-force/README.md) ->
+
 ## Initial observation
 
 Opened the PCAP file in Wireshark.
@@ -53,6 +56,9 @@ Potential attack surfaces:
 - TCP → underlying transport, useful for session tracking and stream analysis
 
 ![protocols](/screenshots/04_protocols.png)
+
+<- [Root README](../README.md)   
+[Attack 1](../01-attack-1-credential-brute-force/README.md) ->
 
 ### HTTP Traffic Overview
 
