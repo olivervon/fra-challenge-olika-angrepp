@@ -66,6 +66,8 @@ Filtered all HTTP traffic to focus on potential web-based attacks.
 
 Multiple HTTP GET requests were observed targeting the login functionality.
 
+![Brute Force Attempts](/screenshots/06_bruteforce_attempts.png)
+
 Observed patterns:
 - Multiple usernames were tested
 - Multiple passwords were attempted for each username
@@ -80,14 +82,14 @@ Note:
 - All responses returned HTTP 200 OK, indicating that status codes alone cannot determine authentication success
 - Response content must be analyzed for confirmation
 
-![Brute Force Attempts](/screenshots/06_bruteforce_attempts.png)
-
 ### TCP Stream Analysis
 
 Two representative login attempts were analyzed:
 
 - password=123456
 - password=princesa
+
+![TCP Stream](screenshots/07_tcp_stream.png)
 
 Findings:
 - Both responses returned HTTP/1.1 200 OK
@@ -97,8 +99,6 @@ Findings:
 Conclusion:
 - The application returns identical responses regardless of authentication success or failure
 - It is not possible to determine successful login attempts based on response analysis alone
-
-![TCP Stream](screenshots/07_tcp_stream.png)
 
 ### Vulnerability
 
@@ -132,6 +132,8 @@ After filtering out login attempts, new HTTP requests were identified targeting 
 
 /hackable/uploads/funny.php
 
+![RCE Activity](/screenshots/08_attack2_rce.png)
+
 Observed parameters:
 - cmd=id
 - cmd=ls -la
@@ -146,8 +148,6 @@ Analysis:
 
 Conclusion:
 - The attacker has achieved remote code execution on the target system
-
-![RCE Activity](/screenshots/08_attack2_rce.png)
 
 ### Vulnerability
 
@@ -173,6 +173,8 @@ Multiple HTTP requests containing SQL injection payloads were identified targeti
 
 /applications/app3/
 
+![SQL Injection](screenshots/09_sqli_requests.png)
+
 Observed payloads include:
 
 - UNION SELECT statements
@@ -194,8 +196,6 @@ Analysis:
 Conclusion:
 - The application is vulnerable to SQL injection
 - The attacker has successfully accessed database contents
-
-![SQL Injection](screenshots/09_sqli_requests.png)
 
 ### Vulnerability
 
@@ -220,3 +220,37 @@ Worst-case scenario:
 - T1005 – Data from Local System
 - T1552 – Unsecured Credentials
 
+### Attack 4 – File Upload (Web Shell Deployment)
+
+A POST request to the following endpoint was identified:
+
+/applications/app2/
+
+![File Upload](screenshots/10_file_upload.png)
+
+The request contains multipart/form-data, indicating a file upload operation.
+
+Although the packet is marked as malformed, key indicators confirm file upload activity:
+- Use of HTTP POST method
+- multipart/form-data content type
+- Presence of MIME boundaries
+
+Shortly after this request, a PHP file is accessed:
+
+/hackable/uploads/funny.php
+
+Analysis:
+- The attacker likely uploaded a malicious PHP file via this request
+- The uploaded file is later used to execute system commands
+
+Conclusion:
+- The attacker successfully deployed a web shell on the server
+- This enabled remote command execution and full system interaction
+
+### Vulnerability
+
+- Unrestricted file upload
+- Lack of server-side validation
+- Executable files allowed in upload directory
+
+Even though the upload content is not fully visible, the sequence of events provides strong evidence of successful web shell deployment.
