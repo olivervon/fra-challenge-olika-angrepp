@@ -1,5 +1,5 @@
 <- [Root README](../README.md)   
-[Attack 1](../01-attack-1-credential-brute-force/README.md) ->
+[01-attack-1-credential-brute-force](../01-attack-1-credential-brute-force/README.md) ->
 
 ## Initial observation
 
@@ -57,11 +57,11 @@ Potential attack surfaces:
 
 ![protocols](/screenshots/04_protocols.png)
 
-<- [Root README](../README.md)   
-[Attack 1](../01-attack-1-credential-brute-force/README.md) ->
-
 ### HTTP Traffic Overview
 
 Filtered all HTTP traffic to focus on potential web-based attacks.
 
 ![HTTP Traffic](/screenshots/05_http_filter.png)
+
+<- [Root README](../README.md)   
+[01-attack-1-credential-brute-force](../01-attack-1-credential-brute-force/README.md) ->
