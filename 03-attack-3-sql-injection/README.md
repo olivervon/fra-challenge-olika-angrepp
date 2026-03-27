@@ -8,7 +8,7 @@ Multiple HTTP requests containing SQL injection payloads were identified targeti
 
 /applications/app3/
 
-![SQL Injection](screenshots/09_sqli_requests.png)
+![SQL Injection](/screenshots/09_sqli_requests.png)
 
 Observed payloads include:
 
