@@ -1,5 +1,5 @@
 <- [Root README](/README.md)  
-<- [02-attack-2-remote-command-execution](/02-attack-2-remote-command-execution/README.md)  
+<- [01-attack-1-credential-brute-force](/01-attack-1-credential-brute-force/README.md)  
 [03-attack-3-sql-injection](/03-attack-3-sql-injection/README.md) ->
 
 # Attack 2 – Remote Command Execution (Web Shell)
@@ -44,5 +44,5 @@ The attacker is able to execute arbitrary system commands and access sensitive s
 - T1003 – OS Credential Dumping
 
 <- [Root README](/README.md)  
-<- [02-attack-2-remote-command-execution](/02-attack-2-remote-command-execution/README.md)  
+<- [01-attack-1-credential-brute-force](/01-attack-1-credential-brute-force/README.md)  
 [03-attack-3-sql-injection](/03-attack-3-sql-injection/README.md) ->
