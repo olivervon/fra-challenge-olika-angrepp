@@ -1,4 +1,4 @@
-<- [Root README](/00-initial-observation/README.md)  
+<- [Root README](/README.md)  
 <- [00-initial-observation](/00-initial-observation/README.md)  
 [03-attack-3-sql-injection](/03-attack-3-sql-injection/README.md) ->
 
@@ -66,6 +66,6 @@ Worst-case scenario:
 
 The absence of rate limiting and secure authentication mechanisms allows attackers to systematically attempt credential combinations without restriction.
 
-<- [Root README](/00-initial-observation/README.md)  
+<- [Root README](/README.md)  
 <- [00-initial-observation](/00-initial-observation/README.md)  
 [03-attack-3-sql-injection](/03-attack-3-sql-injection/README.md) ->
