@@ -1,6 +1,6 @@
 <- [Root README](/README.md)  
 <- [00-initial-observation](/00-initial-observation/README.md)  
-[03-attack-3-sql-injection](/03-attack-3-sql-injection/README.md) ->
+[02-attack-2-remote-command-execution](/02-attack-2-remote-command-execution/README.md) ->
 
 # Attack 1 – Credential Brute Force / Credential Stuffing
 
@@ -68,4 +68,4 @@ The absence of rate limiting and secure authentication mechanisms allows attacke
 
 <- [Root README](/README.md)  
 <- [00-initial-observation](/00-initial-observation/README.md)  
-[03-attack-3-sql-injection](/03-attack-3-sql-injection/README.md) ->
+[02-attack-2-remote-command-execution](/02-attack-2-remote-command-execution/README.md) ->
