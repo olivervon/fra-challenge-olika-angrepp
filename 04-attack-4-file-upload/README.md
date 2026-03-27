@@ -7,7 +7,7 @@ A POST request to the following endpoint was identified:
 
 /applications/app2/
 
-![File Upload](screenshots/10_file_upload.png)
+![File Upload](/screenshots/10_file_upload.png)
 
 The request contains multipart/form-data, indicating a file upload operation.
 
