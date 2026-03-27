@@ -166,3 +166,33 @@ The attacker is able to execute arbitrary system commands and access sensitive s
 - T1059 – Command and Scripting Interpreter
 - T1105 – Ingress Tool Transfer
 - T1003 – OS Credential Dumping
+
+### Attack 3 – SQL Injection (Data Exfiltration)
+
+Multiple HTTP requests containing SQL injection payloads were identified targeting the "id" parameter in:
+
+/applications/app3/
+
+Observed payloads include:
+
+- UNION SELECT statements
+- Enumeration of database metadata via information_schema
+- Extraction of sensitive data from application tables
+
+Examples:
+- union all select 1,2,3
+- union all select @@version
+- union all select table_name from information_schema.tables
+- union all select column_name from information_schema.columns
+- union all select user,password from users
+
+Analysis:
+- The attacker successfully injects SQL queries into the application
+- The database structure is enumerated
+- Sensitive data, including user credentials, is extracted
+
+Conclusion:
+- The application is vulnerable to SQL injection
+- The attacker has successfully accessed database contents
+
+![SQL Injection](screenshots/09_sqli_requests.png)
