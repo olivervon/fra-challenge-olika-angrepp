@@ -196,3 +196,27 @@ Conclusion:
 - The attacker has successfully accessed database contents
 
 ![SQL Injection](screenshots/09_sqli_requests.png)
+
+### Vulnerability
+
+- SQL injection due to lack of input sanitization
+- User-controlled input is directly used in SQL queries
+- No parameterized queries or prepared statements
+
+### Severity
+
+Critical
+
+The attacker is able to extract sensitive database information, including user credentials.
+
+Worst-case scenario:
+- Full database compromise
+- Credential reuse across systems
+- Privilege escalation and lateral movement
+
+### MITRE ATT&CK
+
+- T1190 – Exploit Public-Facing Application
+- T1005 – Data from Local System
+- T1552 – Unsecured Credentials
+
