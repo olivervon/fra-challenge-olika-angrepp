@@ -105,3 +105,5 @@ Critical
 The activity appears to be conducted within a controlled or simulated environment, but reflects realistic attacker techniques and methodologies.
 
 The analysis demonstrates how multiple vulnerabilities can be chained together to achieve full system compromise.
+
+[00-initial-observation](/00-initial-observation/README.md) ->
